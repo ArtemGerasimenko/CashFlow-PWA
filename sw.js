@@ -1,4 +1,4 @@
-const CACHE_NAME = "cashflow-calculator-v1";
+const CACHE_NAME = "cashflow-calculator-v2";
 const APP_SHELL = [
   "./",
   "./index.html",
