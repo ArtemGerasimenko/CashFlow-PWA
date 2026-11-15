@@ -1,7 +1,7 @@
 {
   "id": "./",
-  "name": "CashFlow — Вывод и Каскад",
-  "short_name": "CashFlow",
+  "name": "Калькулятор вывода",
+  "short_name": "Калькулятор вывода",
   "description": "Мобильный калькулятор вывода CashFlow",
   "lang": "ru",
   "start_url": "./",
