@@ -23,6 +23,9 @@
 - `index.html` — приложение и встроенные стили/скрипты.
 - `manifest.webmanifest` — имя, режим отображения и иконки PWA.
 - `sw.js` — Service Worker и кэширование оболочки.
-- `assets/` — иконки приложения.
+- `assets/icon.svg` — SVG-иконка и favicon.
+- `assets/icon-192.png` — иконка для Android и iOS.
+- `assets/icon-512.png` — иконка высокого разрешения.
+- `assets/icon-maskable-512.png` — адаптивная maskable-иконка Android.
 
 Для установки PWA на Android требуется HTTPS. После обновления файлов обновлённый Service Worker использует новый ключ кэша.
