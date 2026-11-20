@@ -3357,7 +3357,7 @@ renderCascade();
 <script id="cashflow-pwa-registration">
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch(err => {
+    navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' }).then(registration => registration.update()).catch(err => {
       console.warn('CashFlow: service worker registration failed', err);
     });
   });

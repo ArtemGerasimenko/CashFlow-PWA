@@ -1,4 +1,5 @@
-const CACHE_NAME = "cashflow-calculator-v4";
+/* CashFlow PWA — icon refresh */
+const CACHE_NAME = "cashflow-calculator-v6-icons";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -35,8 +36,10 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(request)
         .then((response) => {
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put("./index.html", copy));
+          if (response && response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put("./index.html", copy));
+          }
           return response;
         })
         .catch(async () => (await caches.match("./index.html")) || (await caches.match("./")))
